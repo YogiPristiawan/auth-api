@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-exports.shorthands = undefined;
+exports.shorthands = undefined
 
 exports.up = (pgm) => {
   pgm.createTable('authentications', {
@@ -8,9 +8,9 @@ exports.up = (pgm) => {
       type: 'TEXT',
       notNull: true,
     },
-  });
-};
+  })
+}
 
 exports.down = (pgm) => {
-  pgm.dropTable('authentications');
-};
+  pgm.dropTable('authentications')
+}
