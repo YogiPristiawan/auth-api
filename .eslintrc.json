@@ -13,6 +13,11 @@
     },
     "rules": {
         "linebreak-style": ["off"],
-        "semi": ["error", "never"]
+        "semi": ["error", "never"],
+        "no-underscore-dangle": ["error", {
+            "enforceInMethodNames": false,
+            "allowAfterThis": true            
+        }],
+        "class-methods-use-this": ["off"]
     }
 }
