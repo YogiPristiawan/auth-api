@@ -13,7 +13,7 @@ class RegisterUser {
     if (!username || !password || !fullname) {
       throw new Error('REGISTER_USER.NOT_CONTAIN_NEEDED_PROPERTY')
     }
-    if (typeof username !== 'string' || typeof password !== 'string') {
+    if (typeof username !== 'string' || typeof password !== 'string' || typeof fullname !== 'string') {
       throw new Error('REGISTER_USER.NOT_MEET_DATA_TYPE_SPECIFICATION')
     }
     if (username.length > 50) {
