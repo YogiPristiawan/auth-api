@@ -30,7 +30,7 @@ container.register([
           concrete: pool,
         },
         {
-          concrete: uuidv4(),
+          concrete: uuidv4,
         },
       ],
     },
